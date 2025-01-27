@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
     <!-- tailwind-cdn -->
@@ -37,39 +37,49 @@
         },
       };
     </script>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", serif;
+      }
+    </style>
   </head>
-  <body>
-    <!-- hero-section-->
-    <div class="m-5 flex justify-center">
-      <!-- title-content -->
-      <div class="m-5">
-        <h1 class="text-2xl font-bold text-7xl">
+  <body class="font-manrope m-5">
+    <!--banner-section-->
+    <div class="flex flex-col-reverse items-center">
+      <!-- title-section -->
+      <div class="flex flex-col items-center my-10">
+        <h1 class="font-extrabold text-center text-4xl">
           It's good <br />
           tea time at The <br />
-          Tea House
         </h1>
-        <p class="text-lg my-8 text-gray-500">
-          Tea and Botanical Solutions Supplier Give Optimum <br />
-          Satisfaction To Your Taste Buds.
+        <p class="text-center">
+          <span class="text-6xl font-extrabold text-green-500">Tea House</span>
+        </p>
+
+        <p class="w-3/4 text-center text-sm font-semibold text-gray-500 my-5">
+          Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
+          Taste Buds.
         </p>
         <button
-          class="text-xl font-normal bg-gradient-to-r from-orange-500 to-red-600 text-white p-4 rounded-lg"
+          class="bg-gradient-to-r from-orange-400 to-red-600 text-white text-xl font-semibold py-4 px-8 rounded-md"
         >
-          Explore More<i class="fa-solid fa-arrow-right ml-2"></i>
+          Explore More
+          <i class="fa-solid fa-arrow-right ml-2 -rotate-45"></i>
         </button>
       </div>
-      <!-- hero-image-section -->
-      <div class="m-5">
-        <img src="images/banner.png" alt="" />
-        <div>
-          <div
-            class="flex justify-evenly absolute top-2 items-center p-5 bg-green-400 rounded-xl w-60"
-          >
-            <i class="fa-regular fa-star-half-stroke text-4xl"></i>
-            <div>
-              <p class="text-3xl font-bold">5.00</p>
-              <p class="text-base font">Trust Pilot Rating</p>
-            </div>
+
+      <!--banner-image-section -->
+      <div class="relative m-5">
+        <img src="images/banner.png" alt="" class="" />
+
+        <!-- rating-card -->
+        <div
+          class="shadow-xl flex justify-center items-center rounded-md min-w-44 py-4 bg-slate-50 absolute bottom-0"
+        >
+          <i class="fa-solid fa-star text-yellow-400 mr-2 text-3xl"></i>
+          <div>
+            <h1 class="font-extrabold text-2xl leading-6">5.00</h1>
+            <p class="text-xs">Trust Pilot Ratings</p>
           </div>
         </div>
       </div>
